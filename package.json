@@ -1,0 +1,39 @@
+{
+  "name": "login-newdesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.js",
+  "scripts": {
+    "build": "webpack --mode production  --config prod.config.js",
+    "front": "webpack --mode production --config front.config.js",
+    "stage-front-profit": "webpack --mode development --config front.dev.profit.config.js",
+    "stage-profit": "webpack --mode development --config stage.profit.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-amplify/auth": "^4.5.1",
+    "@aws-amplify/core": "^4.5.1",
+    "amazon-cognito-identity-js": "^6.3.6",
+    "apple-signin-auth": "^1.7.6",
+    "aws-sdk": "^2.1469.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "scripts": "^0.1.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "watch": "^1.0.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
